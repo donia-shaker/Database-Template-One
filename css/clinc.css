@@ -1,0 +1,124 @@
+/* start variable */
+:root {
+  --main-color: #75d5cb;
+}
+/* end variable */
+/* Start Global Element */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Element */
+/* start main */
+main {
+  min-height: 100vh;
+  background-image: url(../images/clean-medical-background_53876-97927.jpg);
+  padding: 20px 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .container h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 50px;
+}
+main .container .info {
+  display: flex;
+  justify-content: center;
+}
+main .container .info form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+}
+main .container .info form input {
+  width: 550px;
+  height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 5px 5px 10px var(--main-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 20px;
+  caret-color: var(--main-color);
+}
+@media (max-width: 767px) {
+  main .container .info form input {
+    width: 350px;
+  }
+}
+main .container .info form :last-child {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+}
+main .container .info form input[type="submit"] {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+}
+/* end main */
+/* start variable */
+:root {
+  --main-color: #75d5cb;
+}
+/* end variable */
+/* start php */
+main .container table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: white;
+}
+main .container table th {
+  background-color: var(--main-color);
+  padding: 15px 0;
+  font-size: 20px;
+  color: white;
+}
+main .container table td {
+  color: black;
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+/* end php */
